@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @manager_room.first_name %> <%= @manager_room.last_name %></h1>
+  <p class="lead"><%= @manager_room.email %> | <%= @manager_room.phone %> | <%= @manager_room.address %> </p>
+  <br/> 
+  <p class="lead">
+    <%= link_to 'Edit', edit_manager_room_path(@manager_room), class:"btn btn-danger" %> 
+    <%= link_to 'Back', manager_rooms_path, class:"btn btn-danger" %>
+  </p>
+</div>
+
+
+
+
